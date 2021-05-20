@@ -36,7 +36,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     //modal
     const modal = document.querySelector('.modal');
-    const modalContainer = document.querySelector('.modal__container');
     const modalImage = document.querySelector('.modal__image');
 
     const openModal = (imageSrc) => {

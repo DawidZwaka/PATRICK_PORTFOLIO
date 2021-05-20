@@ -25,7 +25,6 @@ document.addEventListener('DOMContentLoaded', function () {
   }); //modal
 
   var modal = document.querySelector('.modal');
-  var modalContainer = document.querySelector('.modal__container');
   var modalImage = document.querySelector('.modal__image');
 
   var openModal = function openModal(imageSrc) {

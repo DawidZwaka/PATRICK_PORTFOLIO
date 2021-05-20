@@ -113,11 +113,6 @@ form {
     a[type=submit] {
         border: 1px solid #707070;
         margin-bottom: 40px;
-    }
-
-    input,
-    textarea,
-    a[type=submit] {
         font-size: 50px;
         padding: 20px;
         &::placeholder {

@@ -87,10 +87,7 @@ form {
   form textarea,
   form a[type=submit] {
     border: 1px solid #707070;
-    margin-bottom: 40px; }
-  form input,
-  form textarea,
-  form a[type=submit] {
+    margin-bottom: 40px;
     font-size: 50px;
     padding: 20px; }
     form input::-webkit-input-placeholder,
