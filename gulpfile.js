@@ -53,7 +53,6 @@ function js(cb) {
             presets: ['@babel/preset-env']
         }))
         .pipe(concat("main.js"))
-        .pipe(uglify())
         .pipe(gulp.dest("dist/js"));
     cb();
 }
@@ -61,7 +60,7 @@ function js(cb) {
 // Compile Sass
 function css(cb) {
     gulp.src("src/assets/sass/*.scss")
-        .pipe(sass({ outputStyle: "compressed" }).on("error", sass.logError))
+        .pipe(sass().on("error", sass.logError))
         .pipe(autoprefixer({
             browserlist: ['last 2 versions'],
             cascade: false

@@ -1,0 +1,22 @@
+.aboutMe {
+    flex-direction: column;
+    align-items: flex-start;
+
+    &__inside {
+        display: flex;
+        padding: 0 200px 100px 200px;
+    }
+    &__content {
+        font-size: 60px;
+        line-height: 67px;
+        display: flex;
+        align-items: center;
+        text-align: left;
+        padding-left: 80px;
+        width: 100%;
+        transition: width .5s;
+        &.nav-open {
+            width: 600px;
+        }
+    }
+}

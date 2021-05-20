@@ -2,25 +2,118 @@
 # Nav
 *------------------*/
 
-nav {
-    background: #333;
+.nav {
+    background: $secondary-color;
     border-bottom-right-radius: 5px;
     left: 0;
-    padding: 1rem;
-    position: absolute;
+    height: 100%;
+    padding: 0;
     top: 0;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 100;
+    width: $menu-width;
+    min-width: $menu-width;
+       
     ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
+        display: flex;  
+        flex-direction: column;
+        justify-content: center;
+
+        &.slideIn {
+            li {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        &.slideOut {
+            li {
+                transition-delay: .3s;
+
+                &:nth-child(2) {
+                    transition-delay: .2s;
+                }
+
+                &:nth-child(3) {
+                    transition-delay: .1s;
+                }
+            
+                &:nth-child(4) {
+                    transition-delay: 0s;
+                }
+            }
+        }
     }
 
-    li a {
+    li {
+        opacity: 0;
+        transform: translateX(-100%);
+        display: block;
+        position: relative;
+        transition: opacity .3s, transform .3s;
+        transition-delay: .2s;
+
+        &:nth-child(2) {
+            transition-delay: .3s;
+        }
+
+        &:nth-child(3) {
+            transition-delay: .4s;
+        }
+
+        &:nth-child(4) {
+            transition-delay: .5s;
+        }
+
+        a {
         color: #f9f9f9;
+        text-decoration: none;
+        font-size: 60px;
+        font-family: 'Lato', sans-serif;
+        position: relative;
 
         &:hover {
             text-decoration: none;
         }
+        }
+    }
+
+    .close {
+        position: absolute;
+        right: 80px;
+        top: 50px;
+        width: 86px;
+        height: 86px;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.open {
+    position: absolute;
+    width: 85px;
+    height: 85px;
+    left: 70px;
+    top: 50px;
+    z-index: 1;
+    img {
+        width: 100%;
+    }
+}
+
+@keyframes textslide {
+    0% {
+        opacity: 0;
+        transform: translate(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
     }
 }

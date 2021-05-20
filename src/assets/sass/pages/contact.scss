@@ -1,0 +1,9 @@
+.contact {
+    background-color: #E0E0E0;
+    flex-direction: column;
+    transition: .7s min-width ease-in-out;
+    min-width: 100vw;
+    &.nav-open {
+        min-width: calc( 100vw - 520px);
+    }
+}

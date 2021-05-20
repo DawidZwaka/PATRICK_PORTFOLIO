@@ -1,11 +1,12 @@
-// Normalise
-@import "./vendor/normalise";
-
-// Base
-@import "./base/variables";
 @import "./base/base";
-@import "./base/typography";
 
-// Components
+@import "./pages/entry";
+@import "./pages/contact";
+@import "./pages/gallery";
+@import "./pages/freelance";
+@import "./pages/aboutMe";
+@import "./pages/thank-you.scss";
+
 @import "./components/nav";
-@import "./components/main-content";
+@import "./components/boxes.scss";
+@import "./components/modal.scss";
