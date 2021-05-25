@@ -19,11 +19,8 @@ body {
 .page-width {
   min-width: 100vw;
   height: 100%;
-  display: -webkit-box;
   display: flex;
-  -webkit-box-align: center;
   align-items: center;
-  -webkit-box-pack: start;
   justify-content: flex-start;
   flex-wrap: wrap;
   background-color: white; }
@@ -47,7 +44,6 @@ body {
     color: #FFFFFF;
     border-color: #FFFFFF; }
   .btn--withAnim {
-    -webkit-transition: background-color .3s, color .3s;
     transition: background-color .3s, color .3s; }
     .btn--withAnim:hover {
       background-color: #000000;
@@ -63,24 +59,18 @@ body {
 
 .page-content {
   background-color: black;
-  display: -webkit-box;
   display: flex;
-  -webkit-box-align: center;
   align-items: center;
   text-align: center;
   width: 100vw;
   position: relative;
   left: -520px;
-  -webkit-transition: left .7s ease-in-out;
   transition: left .7s ease-in-out; }
   .page-content.nav-open {
     left: 0; }
 
 form {
-  display: -webkit-box;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
   flex-direction: column;
   margin: auto; }
   form input,
@@ -90,22 +80,6 @@ form {
     margin-bottom: 40px;
     font-size: 50px;
     padding: 20px; }
-    form input::-webkit-input-placeholder,
-    form textarea::-webkit-input-placeholder,
-    form a[type=submit]::-webkit-input-placeholder {
-      color: black; }
-    form input::-moz-placeholder,
-    form textarea::-moz-placeholder,
-    form a[type=submit]::-moz-placeholder {
-      color: black; }
-    form input:-ms-input-placeholder,
-    form textarea:-ms-input-placeholder,
-    form a[type=submit]:-ms-input-placeholder {
-      color: black; }
-    form input::-ms-input-placeholder,
-    form textarea::-ms-input-placeholder,
-    form a[type=submit]::-ms-input-placeholder {
-      color: black; }
     form input::placeholder,
     form textarea::placeholder,
     form a[type=submit]::placeholder {
@@ -116,7 +90,6 @@ form {
     color: black;
     text-decoration: none;
     font-family: 'Lato', sans-serif;
-    -webkit-transition: color .3s, background-color .3s;
     transition: color .3s, background-color .3s; }
     form a[type=submit]:hover {
       color: white;
@@ -124,11 +97,8 @@ form {
 
 .entry {
   background-color: black;
-  display: -webkit-box;
   display: flex;
-  -webkit-box-align: start;
   align-items: flex-start;
-  -webkit-box-pack: center;
   justify-content: center;
   font-family: 'Lato', sans-serif;
   background-image: url("../images/entry-bg.png");
@@ -136,10 +106,7 @@ form {
 
 .contact {
   background-color: #E0E0E0;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
   flex-direction: column;
-  -webkit-transition: .7s min-width ease-in-out;
   transition: .7s min-width ease-in-out;
   min-width: 100vw; }
   .contact.nav-open {
@@ -151,14 +118,9 @@ form {
   background-size: cover; }
 
 .freelance {
-  display: -webkit-box;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
   flex-direction: column;
-  -webkit-box-align: center;
   align-items: center;
-  -webkit-box-pack: center;
   justify-content: center;
   background-image: url("../images/freelance-bg.png");
   background-position: center center;
@@ -178,36 +140,26 @@ form {
       margin: 0 0 30px 0; }
 
 .aboutMe {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
   flex-direction: column;
-  -webkit-box-align: start;
   align-items: flex-start; }
   .aboutMe__inside {
-    display: -webkit-box;
     display: flex;
     padding: 0 200px 100px 200px; }
   .aboutMe__content {
     font-size: 60px;
     line-height: 67px;
-    display: -webkit-box;
     display: flex;
-    -webkit-box-align: center;
     align-items: center;
     text-align: left;
     padding-left: 80px;
     width: 100%;
-    -webkit-transition: width .5s;
     transition: width .5s; }
     .aboutMe__content.nav-open {
       width: 600px; }
 
 .thankYou {
-  display: -webkit-box;
   display: flex;
-  -webkit-box-align: start;
   align-items: flex-start;
-  -webkit-box-pack: center;
   justify-content: center;
   font-family: 'Lato', sans-serif;
   background-image: url("../images/thank_you.png");
@@ -223,11 +175,8 @@ form {
   height: 100%;
   padding: 0;
   top: 0;
-  display: -webkit-box;
   display: flex;
-  -webkit-box-align: center;
   align-items: center;
-  -webkit-box-pack: center;
   justify-content: center;
   position: relative;
   z-index: 100;
@@ -237,49 +186,32 @@ form {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    display: -webkit-box;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
     flex-direction: column;
-    -webkit-box-pack: center;
     justify-content: center; }
     .nav ul.slideIn li {
       opacity: 1;
-      -webkit-transform: translateX(0);
       transform: translateX(0); }
     .nav ul.slideOut li {
-      -webkit-transition-delay: .3s;
       transition-delay: .3s; }
       .nav ul.slideOut li:nth-child(2) {
-        -webkit-transition-delay: .2s;
         transition-delay: .2s; }
       .nav ul.slideOut li:nth-child(3) {
-        -webkit-transition-delay: .1s;
         transition-delay: .1s; }
       .nav ul.slideOut li:nth-child(4) {
-        -webkit-transition-delay: 0s;
         transition-delay: 0s; }
   .nav li {
     opacity: 0;
-    -webkit-transform: translateX(-100%);
     transform: translateX(-100%);
     display: block;
     position: relative;
-    -webkit-transition: opacity .3s, -webkit-transform .3s;
-    transition: opacity .3s, -webkit-transform .3s;
     transition: opacity .3s, transform .3s;
-    transition: opacity .3s, transform .3s, -webkit-transform .3s;
-    -webkit-transition-delay: .2s;
     transition-delay: .2s; }
     .nav li:nth-child(2) {
-      -webkit-transition-delay: .3s;
       transition-delay: .3s; }
     .nav li:nth-child(3) {
-      -webkit-transition-delay: .4s;
       transition-delay: .4s; }
     .nav li:nth-child(4) {
-      -webkit-transition-delay: .5s;
       transition-delay: .5s; }
     .nav li a {
       color: #f9f9f9;
@@ -308,28 +240,15 @@ form {
   .open img {
     width: 100%; }
 
-@-webkit-keyframes textslide {
-  0% {
-    opacity: 0;
-    -webkit-transform: translate(-100%);
-    transform: translate(-100%); }
-  100% {
-    opacity: 1;
-    -webkit-transform: translate(0);
-    transform: translate(0); } }
-
 @keyframes textslide {
   0% {
     opacity: 0;
-    -webkit-transform: translate(-100%);
     transform: translate(-100%); }
   100% {
     opacity: 1;
-    -webkit-transform: translate(0);
     transform: translate(0); } }
 
 .boxes {
-  display: -webkit-box;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -339,7 +258,6 @@ form {
     height: 25vh;
     box-sizing: border-box;
     padding: 20px;
-    display: -webkit-box;
     display: flex; }
     .boxes .box__inside {
       width: 100%;
@@ -352,14 +270,11 @@ form {
   right: 0;
   bottom: 0;
   display: none;
-  -webkit-box-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.3);
   z-index: 1000; }
   .modal.active {
-    display: -webkit-box;
     display: flex; }
   .modal__container {
     width: 70vw; }
